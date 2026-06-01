@@ -29,7 +29,7 @@ export default function Hero() {
           <span className="text-[#a8d5b5]">и зарабатывайте на ней</span>
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-85 mb-3 font-light leading-relaxed">
-          Подбираем апартаменты в Сочи, Анапе и Геленджике с доходностью от 12% годовых. Инвестируйте в курортную недвижимость — пока цены ещё не выросли.
+          Подбираем апартаменты в Сочи, Анапе, Геленджике и Крыму с доходностью от 12% годовых. Инвестируйте в курортную недвижимость — пока цены ещё не выросли.
         </p>
         <p className="text-sm text-[#a8d5b5]/80 mb-10">Бесплатный расчёт окупаемости за 24 часа</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
