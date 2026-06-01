@@ -27,12 +27,19 @@ export default function Promo() {
       </div>
 
       <h3 className="absolute top-12 left-6 text-[#a8d5b5] uppercase z-10 text-xs tracking-[0.3em]">
-        Недвижимость как инвестиция
+        Премиальная и элитная недвижимость
       </h3>
 
-      <p className="absolute bottom-12 left-6 right-6 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-3xl z-10 leading-tight font-light">
-        Юг России — один из самых привлекательных регионов для покупки жилья. Тёплый климат и растущий спрос делают каждый объект выгодным вложением.
-      </p>
+      <div className="absolute bottom-12 left-6 right-6 z-10 max-w-3xl">
+        <p className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-light mb-8">
+          Виллы, пентхаусы и закрытые резиденции — объекты, которых нет в открытом доступе.
+        </p>
+        <div className="flex flex-wrap gap-6">
+          {["Полная конфиденциальность", "Закрытая база объектов", "Сделка без огласки"].map((t) => (
+            <span key={t} className="text-[#a8d5b5] text-xs uppercase tracking-widest border-l-2 border-[#a8d5b5] pl-3">{t}</span>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

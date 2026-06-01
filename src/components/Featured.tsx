@@ -20,6 +20,16 @@ export default function Featured() {
       title: "Сервис после покупки",
       desc: "Помогаем с управлением объектом, сдачей в аренду и получением первого дохода уже в первый сезон.",
     },
+    {
+      icon: "🔒",
+      title: "Конфиденциальность",
+      desc: "Полная закрытость сделки. Данные клиентов и условия покупки не раскрываются третьим лицам.",
+    },
+    {
+      icon: "👑",
+      title: "Премиальный сегмент",
+      desc: "Работаем с элитными виллами, пентхаусами и закрытыми резиденциями — объектами, которых нет в открытом доступе.",
+    },
   ];
 
   return (
@@ -34,7 +44,7 @@ export default function Featured() {
             Мы не просто продаём недвижимость — мы помогаем заработать на ней
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {advantages.map((item, i) => (
             <div key={i} className="border-t-2 border-[#2d6a4f] pt-6">
               <div className="text-4xl mb-4">{item.icon}</div>
