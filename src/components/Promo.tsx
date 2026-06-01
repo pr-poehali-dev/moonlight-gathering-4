@@ -19,18 +19,19 @@ export default function Promo() {
         <motion.div style={{ y }} className="relative w-full h-full">
           <img
             src="/images/spiral-circles.jpg"
-            alt="Abstract spiral circles"
+            alt="Недвижимость юга"
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-[#1b4332]/70" />
         </motion.div>
       </div>
 
-      <h3 className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg">
+      <h3 className="absolute top-12 left-6 text-[#a8d5b5] uppercase z-10 text-xs tracking-[0.3em]">
         Недвижимость как инвестиция
       </h3>
 
-      <p className="absolute bottom-12 right-6 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-5xl z-10">
-        Юг России — один из самых привлекательных регионов для покупки жилья. Тёплый климат, развитая инфраструктура и растущий туристический поток делают каждый объект выгодным вложением.
+      <p className="absolute bottom-12 left-6 right-6 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-3xl z-10 leading-tight font-light">
+        Юг России — один из самых привлекательных регионов для покупки жилья. Тёплый климат и растущий спрос делают каждый объект выгодным вложением.
       </p>
     </div>
   );

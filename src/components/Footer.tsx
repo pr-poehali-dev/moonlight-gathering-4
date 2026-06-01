@@ -1,61 +1,31 @@
 export default function Footer() {
   return (
     <div
-      className="relative h-[400px] sm:h-[600px] lg:h-[800px] max-h-[800px]"
+      className="relative h-[400px] sm:h-[500px] lg:h-[600px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="relative h-[calc(100vh+400px)] sm:h-[calc(100vh+600px)] lg:h-[calc(100vh+800px)] -top-[100vh]">
-        <div className="h-[400px] sm:h-[600px] lg:h-[800px] sticky top-[calc(100vh-400px)] sm:top-[calc(100vh-600px)] lg:top-[calc(100vh-800px)]">
-          <div className="bg-neutral-900 py-4 sm:py-6 lg:py-8 px-4 sm:px-6 h-full w-full flex flex-col justify-between">
-            <div className="flex shrink-0 gap-8 sm:gap-12 lg:gap-20">
-              <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Агентство</h3>
-                <a
-                  href="#about"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Об агентстве
-                </a>
-                <a
-                  href="#objects"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Объекты
-                </a>
-                <a
-                  href="#contact"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Связаться
-                </a>
+      <div className="relative h-[calc(100vh+400px)] sm:h-[calc(100vh+500px)] lg:h-[calc(100vh+600px)] -top-[100vh]">
+        <div className="h-[400px] sm:h-[500px] lg:h-[600px] sticky top-[calc(100vh-400px)] sm:top-[calc(100vh-500px)] lg:top-[calc(100vh-600px)]">
+          <div className="bg-[#1b3a2f] py-8 px-6 h-full w-full flex flex-col justify-between">
+            <div className="flex gap-12 sm:gap-20 lg:gap-32">
+              <div className="flex flex-col gap-2">
+                <h3 className="mb-2 uppercase text-[#a8d5b5] text-xs tracking-widest">Агентство</h3>
+                <a href="#advantages" className="text-white hover:text-[#a8d5b5] transition-colors duration-300 text-sm">О нас</a>
+                <a href="#services" className="text-white hover:text-[#a8d5b5] transition-colors duration-300 text-sm">Услуги</a>
+                <a href="#contact" className="text-white hover:text-[#a8d5b5] transition-colors duration-300 text-sm">Связаться</a>
               </div>
-              <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Направления</h3>
-                <a
-                  href="#buy"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Купить
-                </a>
-                <a
-                  href="#rent"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Арендовать
-                </a>
-                <a
-                  href="#invest"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Инвестиции
-                </a>
+              <div className="flex flex-col gap-2">
+                <h3 className="mb-2 uppercase text-[#a8d5b5] text-xs tracking-widest">Направления</h3>
+                <a href="#services" className="text-white hover:text-[#a8d5b5] transition-colors duration-300 text-sm">Купить</a>
+                <a href="#services" className="text-white hover:text-[#a8d5b5] transition-colors duration-300 text-sm">Арендовать</a>
+                <a href="#services" className="text-white hover:text-[#a8d5b5] transition-colors duration-300 text-sm">Инвестиции</a>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">
-              <h1 className="text-[18vw] sm:text-[16vw] lg:text-[14vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 text-white font-bold tracking-tight">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+              <h1 className="text-[16vw] sm:text-[14vw] lg:text-[12vw] leading-[0.85] text-[#2d6a4f] font-bold tracking-tight">
                 ВАШ ДОМ
               </h1>
-              <p className="text-white text-sm sm:text-base">{new Date().getFullYear()} Агентство недвижимости «Ваш дом»</p>
+              <p className="text-[#a8d5b5]/60 text-xs">{new Date().getFullYear()} Агентство недвижимости «Ваш дом»</p>
             </div>
           </div>
         </div>

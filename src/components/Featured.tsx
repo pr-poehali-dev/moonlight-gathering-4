@@ -1,22 +1,28 @@
 export default function Featured() {
+  const advantages = [
+    { icon: "🏆", title: "10+ лет опыта", desc: "Работаем на рынке недвижимости юга с 2013 года" },
+    { icon: "🤝", title: "Честные сделки", desc: "Полное юридическое сопровождение и прозрачные условия" },
+    { icon: "🌊", title: "Знаем регион", desc: "Все лучшие локации от Анапы до Сочи" },
+    { icon: "💎", title: "Только проверенные объекты", desc: "Каждый объект проходит тщательную проверку перед выставлением" },
+  ];
+
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
-      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
-        <img
-          src="/images/exterior.png"
-          alt="Красивая недвижимость на юге"
-          className="w-full h-full object-cover"
-        />
+    <section id="advantages" className="bg-[#f4f0e6] px-6 py-24">
+      <div className="max-w-6xl mx-auto">
+        <p className="uppercase text-xs tracking-[0.3em] text-[#2d6a4f] mb-4">Почему выбирают нас</p>
+        <h2 className="text-4xl md:text-5xl font-bold text-[#1b3a2f] mb-16 leading-tight max-w-xl">
+          Надёжный партнёр в мире недвижимости
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {advantages.map((item, i) => (
+            <div key={i} className="border-t-2 border-[#2d6a4f] pt-6">
+              <div className="text-4xl mb-4">{item.icon}</div>
+              <h3 className="text-lg font-bold text-[#1b3a2f] mb-2">{item.title}</h3>
+              <p className="text-[#5a6e65] text-sm leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Почему выбирают нас</h3>
-        <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Более 10 лет на рынке недвижимости юга. Подбираем объекты под ваш бюджет и задачи — будь то уютная квартира у моря или выгодные инвестиции в курортный регион.
-        </p>
-        <button className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
-          Узнать больше
-        </button>
-      </div>
-    </div>
+    </section>
   );
 }
