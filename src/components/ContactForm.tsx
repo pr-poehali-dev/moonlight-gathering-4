@@ -59,10 +59,11 @@ export default function ContactForm() {
               className="border border-neutral-300 px-5 py-4 text-neutral-900 outline-none focus:border-neutral-900 transition-colors placeholder:text-neutral-400 bg-transparent"
             />
             <textarea
-              placeholder="Что вас интересует? (необязательно)"
+              placeholder="Что вас интересует? *"
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               rows={4}
+              required
               className="border border-neutral-300 px-5 py-4 text-neutral-900 outline-none focus:border-neutral-900 transition-colors placeholder:text-neutral-400 bg-transparent resize-none"
             />
             {status === "error" && (
